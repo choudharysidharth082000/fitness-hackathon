@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans";
+    box-sizing: border-box;
+
+    --animation-color: #ff7f7f;
+}
+
+/* NAV BAR STYLES */
+header{  position: absolute;}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+ul{
+    margin-top: 25px;
+    list-style: none;
+}
+ul li
+{
+    display: inline-block;
+}
+ul li a{
+    padding: 5px 25px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    font-size: 18px;
+}
+ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+.logo img{
+    width: 150px;
+}
+
+/* HERO SECTION STYLES */
+
+
+.hero-section{
+
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://resize.hswstatic.com/w_907/gif/becoming-doctor.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 10px;
+    color: white;
+}
+
+.hero-section-content
+{
+    margin: 50vh auto 0 auto;
+    transform: translateY(-30%); 
+    max-width: 1200px;
+}
+ 
+
+.title h1{
+    font-size: 80px;
+    font-weight: lighter;
+}
+
+.button{
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.btn{
+    padding: 10px 25px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.para{
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    padding: 25px 0px;
+   
+    max-width: 800px;
+}
+
+/*
+.colorchange{
+    animation: colorchangeflying 2s infinite;
+} */
+
+/* 
+@keyframes colorchangeflying{
+    0%{color: red;}
+    25%{color: white;}
+    50%{color: yellow;}
+    75%{color: grey;}
+    100%{color: pink;}
+} */
+
+.colorchange{
+    animation: heartbeat 2s infinite;
+} 
+
+
+
+@keyframes heartbeat
+{
+    0%{color:white;}
+    35%{color:white;}
+    40%{color:var(--animation-color)}
+    45%{color:white;}
+
+    50%{color:white;}
+    55%{color:var(--animation-color)}
+    60%{color:white;}
+}
